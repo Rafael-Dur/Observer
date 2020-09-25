@@ -1,12 +1,12 @@
-﻿using System;
+﻿//Observer
 
 namespace Observer
 {
     class Program
     {
         static void Main(string[] args)
-        {
-            TemperatureSensor monitor = new TemperatureSensor();
+        {        
+            TemperatureSensor sensor = new TemperatureSensor();
             TemperatureReporter reporter = new TemperatureReporter();
             reporter.StartReporting(monitor);
             monitor.GetTemperature();
