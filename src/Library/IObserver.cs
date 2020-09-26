@@ -1,7 +1,7 @@
 namespace Observer
 {
-    public interface IObserver<T>
+    public interface IObserver
     {
-        void Update(T value);
+        void Update(Temperature value);
     }
 }
